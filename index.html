@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3941c8233f.js" crossorigin="anonymous"></script>
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+        <h2>MyPortfolio</h2>
+        <ul>
+            <li><a id="navLinks" data-link-name="hero">HOME</a></li>
+            <li><a id="navLinks" data-link-name="about">ABOUT</a></li>
+            <li><a id="navLinks" data-link-name="skill">SKILLS</a></li>
+            <li><a id="navLinks" data-link-name="project">PROJECTS</a></li>
+            <li><a id="navLinks" data-link-name="contact">CONTACT</a></li>
+        </ul>
+    </nav>
+    <label for="nav-toggle" id="nav-toggle-label" class="nav-toggle-label"><span></span></label>
+
+    <section class="hero show" data-section-name="hero">
+        <div class="container opacity">
+            <div class="hero-line1">
+                <p>Hello there, I'm</p>
+            </div>
+            <div class="hero-line2">
+                <p>Gary Malonzo</p>
+            </div>
+            <div class="hero-line3">
+                <p>an IT-graduate who got into coding and now an aspiring web developer.</p>
+            </div>
+            <div class="hero-cta">
+                <button class="hero-cta-btn" id="nextBtn">Know More</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" data-section-name="about">
+        <h3>Education & Training</h3>
+        <div class="container">
+            <h4>2017-2021: Tarlac State University</h4>
+            <h5>Bachelor of Science in Information Technology Major in Technical Service Management</h5>
+            <p>In our third year at the university, me and my groupmates created a web-based inventory system as project for one of our subjects. In the last year, with mostly new members, we made a website for blue collar workers as our thesis.</p>
+
+            <h4>2022: Cloudstaff</h4>
+            <h5>Data Security Analyst Training: Pilot Batch of Svalbard 3.0 at Cloudstaff Philippines</h5>
+            <p>As trainees, the main task given to us in the beginning is to learn the fundamentals of cybersecurity. The training lasted for 3 months and as it progress, we then performed security tests on given applications (both web and mobile), while at the same time, continuously conduct researches and keep up with the news regarding cybersecurity to further improve our knowledge.</p>
+
+            <div class="section-btn">
+                <button id="prevBtn">Prev</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="skill" data-section-name="skill">
+        <h3>Skills</h3>
+        <div class="container">
+            <h4>Languages I use:</h4>
+            <ul>
+                <li>
+                    <p>HTML</p>
+                    <i class="fa-brands fa-html5 fa-3x"></i>
+                </li>
+                <li>
+                    <p>CSS</p>
+                    <i class="fa-brands fa-css3-alt fa-3x"></i>
+                </li>
+                <li>
+                    <p>JavaScript</p>
+                    <i class="fa-brands fa-square-js fa-3x"></i>
+                </li>
+                <li>
+                    <p>PHP</p>
+                    <i class="fa-brands fa-php fa-3x"></i>
+                </li>
+                <li>
+                    <p>MySQL</p>
+                    <img src="./img/icons8-mysql-logo-100.png" alt="mysql logo" class="icon-sql">
+                </li>
+                <li>
+                    <p>Wordpress</p>
+                    <i class="fa-brands fa-wordpress fa-3x"></i>
+                </li>
+            </ul>
+            <h4>Others I'm trying to learn:</h4>
+            <ul>
+                <li>
+                    <p>React</p>
+                    <i class="fa-brands fa-react fa-3x"></i>
+                </li>
+                <li>
+                    <p>NodeJS</p>
+                    <i class="fa-brands fa-node fa-3x"></i>
+                </li>
+            </ul>
+            <h4>Rate to self:</h4>
+            <ol>
+                <li><p>Logic</p></li>
+                <li>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </li>
+                <li><p>Critical Thinking</p></li>
+                <li>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </li>
+                <li><p>Documentation</p></li>
+                <li>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </li>
+                <li><p>Verbal Communication</p></li>
+                <li>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                    <i class="fa-regular fa-star"></i>
+                </li>
+            </ol>
+
+            <div class="section-btn">
+                <button id="prevBtn">Prev</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="project" data-section-name="project">
+        <h3>Projects</h3>
+        <div class="container">
+            <details>
+                <summary>Web-Based Inventory System</summary>
+                <div class="details-p">
+                    <p>
+                        For our System Analysis and Development subject, our team searched for a locale to figure out what project to make. We found a water refilling business then conduct an interview. The business-owner uses paper-based inventory to keep track of everything. Some of the problems they encounter are: (1) the pile of papers makes things harder to organize, (2) manual computation of sales takes time, and (3) it's hard to figure out who has the gallons, causing the business to lose some of them.
+                    </p>
+                    <p>
+                        Our team was able to present our concept and was approved by the professor. We then created a prototype of it as our project for our web developement subject. Our plan is to continue the project for our thesis, however, due to multiple unfortunate circumstances, the plan has changed. Firstly, the pandemic made things difficult. Second, the group was separated to different sections, making the members join other groups. Lastly, we found out that the inventory system will not be approved as our capstone project.
+                    </p>
+                </div>
+            </details>
+            <details>
+                <summary>OBRA: A Website for Blue-Collar Workers in Tarlac City</summary>
+                <div class="details-p">
+                    <p>
+                        With a new group, and a pandemic and lockdown going on, the members came up with a project that does not require the team to go out interviewing people. The group settled for a website where blue-collar workers can register and offer their service and clients can request for them. For scalability, the project was limited to people at Tarlac city only.
+                    </p>
+                    <p>
+                        The website was named obra because it means "work" in pampango or kapampangan, one of the prominent languages used at the province of Tarlac.
+                    </p>
+                </div>
+            </details>
+            <details>
+                <summary>Employees Performance Management System</summary>
+                <div class="details-p">
+                    <p>
+                        This is my first project which is not an academic requirement. The system can be managed by multiple admins. In the system, the managers rates the employees' performance from 0 to 10 based on certain criterias that are provided by the system such as: attendance, attitude, and work quality. The scores are then computed and tallied.
+                    </p>
+                </div>
+            </details>
+
+            <div class="section-btn">
+                <button id="prevBtn">Prev</button>
+                <button id="nextBtn">Next</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" data-section-name="contact">
+        <h3>Contact</h3>
+        <div class="container">
+            <h4>Contact Links:</h4>
+            <ul>
+                <li>
+                    <a href="https://www.facebook.com/gary.malonzo.7" target="_blank" class="contact-link"><i class="fa-brands fa-square-facebook"></i>&nbsp;Facebook</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/gary-malonzo-6b1a9b242/" target="_blank" class="contact-link"><i class="fa-brands fa-linkedin"></i>&nbsp;LinkedIn</a>
+                </li>
+                <li>
+                    <a>OR</a>
+                </li>
+                <li>
+                    <a><img src="./img/gmail.png" alt="black and white gmail logo">&nbsp;Gmail:</a>
+                </li>
+                <li>
+                    <a>garymalonzo3273@gmail.com</a>
+                </li>
+            </ul>
+            <h4>icons by:</h4>
+            <ul>
+                <li>
+                    <a target="_blank" href="https://fontawesome.com/icons" class="text-center contact-link">Font Awesome</a>
+                    <a target="_blank" href="https://icons8.com" class="text-center contact-link">Icons8</a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+</html>
